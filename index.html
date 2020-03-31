@@ -5,53 +5,133 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>GottyJ.Art</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/basic.css">
+    <script src="https://kit.fontawesome.com/8218aaee33.js" crossorigin="anonymous"></script>
   </head>
-  <body>
-    <nav class="navbar sticky-top navbar-light bg-light">
-	<ul class="nav nav-justified d-flex mr-auto" role="navigation">
-	  <li class="nav-item"><a href="#" class="nav-link active text-light bg-dark">GottyJ.Art</a></li>
-	  <li class="nav-item"><a href="#shop" class="nav-link">Shop</a></li>
-	  <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-	  <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-	</ul>
-	<!--<ul class="nav nav-justified d-flex ml-auto" role="navigation">
-		<li class="nav-item"><a class="nav-link" href="https://www.facebook.com/GottyJArt-1572905736106586/">Facebook</a></li>
-		<li class="nav-item"><a class="nav-link" href="https://www.instagram.com/gottyj.art/">Instagram</a></li>
-		<li class="nav-item"><a class="nav-link" href="https://www.deviantart.com/gottyj">DeviantArt</a></li>
-	</ul>-->
+  <body data-spy="scroll" data-target="#headnav" data-offset="62">
+    <nav id="headnav" class="navbar sticky-top navbar-light bg-white" role="navigation">
+	  <a href="#" class="text-light bg-dark navbar-brand p-2">GJ.A</a></li>
+	  <div class="bd-navbar-nav nav mr-auto">
+		<a href="#shop" class="nav-item nav-link"><i class="fas fa-shopping-cart"></i> Shop</a>
+		<a href="#about" class="nav-item nav-link"><i class="fas fa-user"></i> About</a>
+	  </div>
+	  <div class="bd-navbar-nav nav ml-auto d-none d-md-flex" role="navigation">
+		<a class="nav-item nav-link" href="https://www.facebook.com/GottyJArt-1572905736106586/"><i class="fab fa-facebook"></i></a>
+		<a class="nav-link nav-item" href="https://www.instagram.com/gottyj.art/"><i class="fab fa-instagram"></i></a>
+		<a class="nav-link nav-item" href="https://www.youtube.com/channel/UCOQx7_JjPdjXEr7fyO6kx8w"><i class="fab fa-youtube"></i></a>
+		<a class="nav-link nav-item" href="https://www.deviantart.com/gottyj"><i class="fab fa-deviantart"></i></a>
+	  </div>
 	</nav>
+	
 	<header>
 		<h1><img src="img/gottydbz.jpeg" alt="GottyJ.Art" class="img-fluid"></h1>
-		<p>Find GottyJ's artwork, all in one location.</p>
+		<p class="container">Find GottyJ's artwork, all in one location.</p>
 	</header>
 	
-    <nav class="navbar sticky-top navbar-light bg-light">
-	<ul class="nav nav-justified d-flex mr-auto" role="navigation">
-	  <li class="nav-item"><a href="#" class="nav-link active text-light bg-dark">GottyJ.Art</a></li>
-	  <li class="nav-item"><a href="#shop" class="nav-link active">Shop</a></li>
-	  <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-	  <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-	</ul>
-	<!--<ul class="nav nav-justified d-flex ml-auto" role="navigation">
-		<li class="nav-item"><a class="nav-link" href="https://www.facebook.com/GottyJArt-1572905736106586/">Facebook</a></li>
-		<li class="nav-item"><a class="nav-link" href="https://www.instagram.com/gottyj.art/">Instagram</a></li>
-		<li class="nav-item"><a class="nav-link" href="https://www.deviantart.com/gottyj">DeviantArt</a></li>
-	</ul>-->
-	</nav>
-
-	<h2 id="shop">Shop</h2>
+	<article id="shop" class="container">
+	<h1>Shop</h1>
+	<div class="card-deck">
+		<div class="card mb-4">
+			<div class="row no-gutters">
+			<div class="col-md-4 my-auto">
+				<img src="img/etsy2.jpg" class="card-img-top" alt="">
+			</div>
+				<div class="card-body col-md-8 pl-3">
+				<h1 class="card-title">
+				<i class="fab fa-etsy"></i>
+					Etsy</h1>
+				<p class="text-info font-weight-bold card-text">Prints directly from GottyJ</p>
+				<p class="card-subtitle">Most prints $17</p>
+				</div>
+			</div>
+		</div>
+		<div class="card mb-4">
+			<div class="row no-gutters">
+			<div class="col-md-4 my-auto">
+				<img src="img/displate.png" class="img-fluid" alt="">
+			</div>
+			<div class="col-md-8">
+				<div class="card-body">
+				<h1 class="card-title">
+					Displate</h1>
+				<p class="text-info font-weight-bold card-text">Metal posters</p>
+				<p class="card-subtitle">Starting at $44</p>
+			</div></div>
+			</div>
+		</div>
+		<div class="w-100 d-none d-sm-block"></div>
+		<div class="card mb-4">
+			<div class="row no-gutters">
+				<div class="col-md-4 my-auto">
+					<img src="img/teepublic.png" class="img-fluid" alt="">
+				</div>
+				<div class="col-md-8">
+					<div class="card-body">
+						<h1 class="card-title">TeePublic</h1>
+						<p class="text-info font-weight-bold card-text">T-shirts of GottyJ's work</p>
+						<p class="card-subtitle">$20</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="card mb-4">
+			<div class="row no-gutters">
+				<div class="col-md-4 my-auto">
+					<img src="img/myanimix.jpg" class="img-fluid" alt="">
+				</div>
+				<div class="col-md-8">
+					<div class="card-body">
+						<h1 class="card-title">My Animix</h1>
+						<p class="text-info font-weight-bold card-text">A local anime shop</p>
+						<p class="card-subtitle">Now selling online merchandise!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	
-	<ul>
+	<!--<ul>
 		<li><a href="http://www.etsy.com/shop/gottyjArt">Etsy</a></li>
 		<li><a href="https://displate.com/gottyj45">Displate</a></li>
 		<li><a href="https://www.teepublic.com/user/gottyjart">TeePublic</a></li>
-	</ul>
-		
-	<footer>
-	<h1 id="about">About</h1>
+		<li><a href="https://www.myanimix.com">My Animix</a></li>
+	</ul>-->
+	</article>
+	
+	<article id="about" class="container">
+	<div class="row">
+	<div class="col-md-6 mr-0 pr-0">
+	<h1>About</h1>
 	<p>I started drawing around May of 2016... I mean really trying to learn. I've always tried and failed at art when I was younger but this was my first attempt at really trying to learn. I hope you like it...but if you don't I still appreciate the time you spent even looking at my stuff! I mainly draw anime characters -- fan art styles~</p>
- 	<h2 id="contact">Contact</h2>
-	<address>If you like a specific piece feel free to message me via <a href="mailto:gottyj@gmail.com">gottyj@gmail.com</a> to ask about sizing and prices.</address>
+	</div>
+	<div class="col-md-6 mr-0 pr-0">
+		<picture>
+		<source srcset="img/aboutn.png" media="(min-width:800px)" class="img-fluid">
+		<img src="img/about.jpg" alt="" class="img-fluid">
+		</picture>
+	</div></div>
+	</article>
+	
+	<footer class="bg-dark text-light">
+	<h1 class="d-none">Navigation</h1>
+	
+	<div class="nav container pt-4">
+	<ul class="nav flex-column col-6">
+		<li class="nav-item"><a class="nav-link text-light" href="#"><i class="fas fa-home fa-fw"></i>&nbsp;&nbsp;Home</a></li>
+		<li class="nav-item"><a class="nav-link text-light" href="#shop"><i class="fas fa-shopping-cart fa-fw"></i>&nbsp;&nbsp;Shop</a></li>
+		<li class="nav-item"><a class="nav-link text-light" href="#about"><i class="fas fa-user fa-fw"></i>&nbsp;&nbsp;About</a></li>
+	</ul><ul class="nav flex-column col-6">
+		<li class="nav-item"><a class="nav-link text-light" href="https://www.facebook.com/GottyJArt-1572905736106586/"><i class="fab fa-facebook fa-fw"></i>&nbsp;&nbsp;Facebook</a></li>
+		<li class="nav-item"><a class="nav-link text-light" href="https://www.instagram.com/gottyj.art/"><i class="fab fa-instagram fa-fw"></i>&nbsp;&nbsp;Instagram</a></li>
+		<li class="nav-item"><a class="nav-link text-light" href="https://www.youtube.com/channel/UCOQx7_JjPdjXEr7fyO6kx8w"><i class="fab fa-youtube fa-fw"></i>&nbsp;&nbsp;YouTube</a></li>
+		<li class="nav-item"><a class="nav-link text-light" href="https://www.deviantart.com/gottyj"><i class="fab fa-deviantart fa-fw"></i>&nbsp;&nbsp;DeviantArt</a></li>
+	</ul></div>
+	
+	<hr class="text-white">
+ 	<h1 id="contact" class="d-none">Contact</h2>
+	<address class="mb-0 container pb-4">If you like a specific piece feel free to message me via <a href="mailto:gottyj@gmail.com" class="text-secondary"><i class="fas fa-envelope"></i> gottyj@gmail.com</a> to ask about sizing and prices.</address>
+	
+	
 	</footer>
 	
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

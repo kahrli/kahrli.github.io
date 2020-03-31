@@ -1,0 +1,17 @@
+@font-face {
+	font-family: "Neuropolitical RG";
+	src: url("neuropolitical rg.ttf");
+}
+
+h1,header,h2,.navbar
+	{ font-family: "Neuropolitical RG",Helvetica, sans-serif; }
+	
+#headnav .nav-link { display:inline-block; border-bottom:thick #fff solid; }
+#headnav .active { display:inline-block; border-bottom:thick #007bff solid; }
+
+:target::before { 
+	display:block; content:""; padding-top:62px; margin-top:-62px; }
+	
+.text-info { font-variant: small-caps; }
+
+.card h1 { font-size: large; }
