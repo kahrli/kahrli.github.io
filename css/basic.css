@@ -9,9 +9,78 @@ h1,header,h2,.navbar
 #headnav .nav-link { display:inline-block; border-bottom:thick #fff solid; }
 #headnav .active { display:inline-block; border-bottom:thick #007bff solid; }
 
+#headnav { 
+	background-image:url('../img/ponyo.png');
+	background-size: auto 150px;
+	background-repeat: no-repeat; 
+	background-position: 65% 52%;
+}
+
 :target::before { 
 	display:block; content:""; padding-top:62px; margin-top:-62px; }
 	
 .text-info { font-variant: small-caps; }
 
 .card h1 { font-size: large; }
+
+.card.shop {
+	background-repeat: no-repeat;
+	background-position: center right -40px;
+	background-size: 250px; 
+	border-color:#ddd;
+}
+
+.card.shop .card-body {
+	background-image:linear-gradient(to left,rgb(255,255,255,0),120px,rgb(255,255,255,100),200px,#fff);
+}
+
+.card#etsy { background-image:url('../img/etsy2.png'); }
+.card#displate { background-image:url('../img/displate.png'); }
+.card#teepublic { background-image:url('../img/teepublic.png'); }
+.card#myanimix { background-image:url('../img/myanimix.jpg'); }
+
+
+
+/*#brand {
+	background-image:linear-gradient(to right,#fff,40%,#fff,41%,#3564aa,50%,#3564aa);
+	background-repeat:no-repeat;
+	background-size:100% 95.3%;
+	background-position: top 44% right;
+}*/
+
+@media (min-width:576px) {
+	.card.shop:not(#myanimix) {
+		max-width:300px;
+		min-width:130px;
+		background-size:300px;
+		background-position:top -30px center;
+	}
+	.card.shop:not(#myanimix) .card-body {
+		padding-top:200px; 
+		background-image:linear-gradient(rgb(0,0,0,0),150px,#fff,215px,#fff);
+	}
+}
+@media (min-width:768px) {
+	.card.shop#myanimix {
+		max-width:300px;
+		min-width:130px;
+		background-size:300px;
+		background-position:top -30px center;
+	}
+	.card.shop#myanimix .card-body {
+		padding-top:200px; 
+		background-image:linear-gradient(rgb(0,0,0,0),150px,#fff,215px,#fff);
+	}	
+}
+
+@media (max-width:360px) {
+	.card.shop {
+		background-image:none !important;
+	}
+}
+
+@media (max-width:768px) {
+	#headnav { 
+		background-size:auto 110px;
+		background-position: right -50px bottom -15px; }
+}

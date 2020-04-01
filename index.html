@@ -6,89 +6,68 @@
     <title>GottyJ.Art</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/basic.css">
+	<link rel="icon" type="image/png" href="img/favsm.png">
     <script src="https://kit.fontawesome.com/8218aaee33.js" crossorigin="anonymous"></script>
   </head>
   <body data-spy="scroll" data-target="#headnav" data-offset="62">
     <nav id="headnav" class="navbar sticky-top navbar-light bg-white" role="navigation">
-	  <a href="#" class="text-light bg-dark navbar-brand p-2">GJ.A</a></li>
+	  <div class="container"><a href="#" class="navbar-brand"><img src="img/favart.png" width="36" height="36" alt="GJ.Art"></a></li>
 	  <div class="bd-navbar-nav nav mr-auto">
 		<a href="#shop" class="nav-item nav-link"><i class="fas fa-shopping-cart"></i> Shop</a>
 		<a href="#about" class="nav-item nav-link"><i class="fas fa-user"></i> About</a>
 	  </div>
-	  <div class="bd-navbar-nav nav ml-auto d-none d-md-flex" role="navigation">
-		<a class="nav-item nav-link" href="https://www.facebook.com/GottyJArt-1572905736106586/"><i class="fab fa-facebook"></i></a>
+	  <div class="bd-navbar-nav nav ml-auto d-none d-sm-flex" role="navigation">
+		<a class="nav-item nav-link" href="https://www.facebook.com/GottyJArt-1572905736106586/"><i class="fab fa-facebook-square"></i></a>
 		<a class="nav-link nav-item" href="https://www.instagram.com/gottyj.art/"><i class="fab fa-instagram"></i></a>
 		<a class="nav-link nav-item" href="https://www.youtube.com/channel/UCOQx7_JjPdjXEr7fyO6kx8w"><i class="fab fa-youtube"></i></a>
 		<a class="nav-link nav-item" href="https://www.deviantart.com/gottyj"><i class="fab fa-deviantart"></i></a>
-	  </div>
+	  </div></div>
 	</nav>
 	
-	<header>
-		<h1><img src="img/gottydbz.jpeg" alt="GottyJ.Art" class="img-fluid"></h1>
-		<p class="container">Find GottyJ's artwork, all in one location.</p>
+	<header id="brand" class="text-center">
+		<h1>
+			<img src="img/gottydbz.jpeg" alt="GottyJ.Art" style="max-height:760px" class="img-fluid"></h1>
+		<!--<p>The artwork of GottyJ, all in one location.</p>-->
 	</header>
 	
 	<article id="shop" class="container">
 	<h1>Shop</h1>
-	<div class="card-deck">
-		<div class="card mb-4">
-			<div class="row no-gutters">
-			<div class="col-md-4 my-auto">
-				<picture>
-					<source srcset="" media="(min-width:800px)" class="card-img">
-					<img src="img/etsy2.jpg" class="card-img-top" alt="">
-				</picture>
-			</div>
-				<div class="card-body col-md-8 pl-3">
+	<div class="card-deck justify-content-around">
+		<div class="card shop mb-4" id="etsy">
+			<div class="card-body">
 				<h1 class="card-title">
-				<i class="fab fa-etsy"></i>
-					Etsy</h1>
+					<a href="http://www.etsy.com/shop/gottyjArt" class="stretched-link text-dark">
+					Etsy</a></h1>
 				<p class="text-info font-weight-bold card-text">Prints directly from GottyJ</p>
 				<p class="card-subtitle">Most prints $17</p>
-				</div>
 			</div>
 		</div>
-		<div class="card mb-4">
-			<div class="row no-gutters">
-			<div class="col-md-4 my-auto">
-				<img src="img/displate.png" class="img-fluid" alt="">
-			</div>
-			<div class="col-md-8">
-				<div class="card-body">
+		<div class="card shop mb-4" id="displate">
+			<div class="card-body">
 				<h1 class="card-title">
-					Displate</h1>
+					<a href="https://displate.com/gottyj45" class="stretched-link text-dark">
+					Displate</a></h1>
 				<p class="text-info font-weight-bold card-text">Metal posters</p>
 				<p class="card-subtitle">Starting at $44</p>
-			</div></div>
 			</div>
 		</div>
-		<div class="w-100 d-none d-sm-block"></div>
-		<div class="card mb-4">
-			<div class="row no-gutters">
-				<div class="col-md-4 my-auto">
-					<img src="img/teepublic.png" class="img-fluid" alt="">
-				</div>
-				<div class="col-md-8">
-					<div class="card-body">
-						<h1 class="card-title">TeePublic</h1>
-						<p class="text-info font-weight-bold card-text">T-shirts of GottyJ's work</p>
-						<p class="card-subtitle">$20</p>
-					</div>
-				</div>
+		<div class="card shop mb-4" id="teepublic">
+			<div class="card-body">
+				<h1 class="card-title">
+					<a href="https://www.teepublic.com/user/gottyjart" class="stretched-link text-dark">
+					TeePublic</a></h1>
+				<p class="text-info font-weight-bold card-text">T-shirts of GottyJ's work</p>
+				<p class="card-subtitle">$20</p>
 			</div>
 		</div>
-		<div class="card mb-4">
-			<div class="row no-gutters">
-				<div class="col-md-4 my-auto">
-					<img src="img/myanimix.jpg" class="img-fluid" alt="">
-				</div>
-				<div class="col-md-8">
-					<div class="card-body">
-						<h1 class="card-title">My Animix</h1>
-						<p class="text-info font-weight-bold card-text">A local anime shop</p>
-						<p class="card-subtitle">Now selling online merchandise!</p>
-					</div>
-				</div>
+		<div class="w-100 d-none d-sm-block d-md-none"></div>
+		<div class="card shop mb-4" id="myanimix">
+			<div class="card-body">
+				<h1 class="card-title">
+					<a href="https://www.myanimix.com" class="stretched-link text-dark">
+						My Animix</a></h1>
+				<p class="text-info font-weight-bold card-text">A local anime shop</p>
+				<p class="card-subtitle">Now selling online merchandise!</p>
 			</div>
 		</div>
 	</div>
@@ -107,7 +86,7 @@
 	<h1>About</h1>
 	<p>I started drawing around May of 2016... I mean really trying to learn. I've always tried and failed at art when I was younger but this was my first attempt at really trying to learn. I hope you like it...but if you don't I still appreciate the time you spent even looking at my stuff! I mainly draw anime characters -- fan art styles~</p>
 	</div>
-	<div class="col-md-6 mr-0 pr-0">
+	<div class="col-md-6 mr-0 pr-0 align-bottom mt-auto">
 		<picture>
 		<source srcset="img/aboutn.png" media="(min-width:800px)" class="img-fluid">
 		<img src="img/about.jpg" alt="" class="img-fluid">
