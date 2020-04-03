@@ -6,7 +6,7 @@
 h1,header,h2,.navbar
 	{ font-family: "Neuropolitical RG",Helvetica, sans-serif; }
 	
-#headnav .nav-link { display:inline-block; border-bottom:thick #fff solid; }
+#headnav .nav-link { display:inline-block; border-bottom:thick rgb(255,255,255,0) solid; }
 #headnav .active { display:inline-block; border-bottom:thick #007bff solid; }
 
 #headnav { 
