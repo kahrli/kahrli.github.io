@@ -84,3 +84,33 @@ h1,header,h2,.navbar
 		background-size:auto 110px;
 		background-position: right -50px bottom -15px; }
 }
+
+@media (prefers-color-scheme: dark) {
+  body { background:  #222; color:#bbb; }
+  .bg-white { background-color:#222!important; }
+  #headnav { background-image:none; }
+  .card.shop .card-body {
+	background-image:linear-gradient(to left,rgb(13,13,13,0),120px,rgb(13.3,13.3,13.3,100),200px,#222);
+  }
+  .card.shop { border-color:#000; }
+  .text-dark { color:#bbb!important; }
+  .bg-dark { background-color:#111!important; }
+  
+	@media (min-width:576px) {
+		.card.shop:not(#myanimix) .card-body {
+			background-image:linear-gradient(rgb(0,0,0,0),150px,#222,215px,#222);
+		}
+	}
+	@media (min-width:768px) {
+		.card.shop#myanimix .card-body {
+			background-image:linear-gradient(rgb(0,0,0,0),150px,#222,215px,#222);
+		}	
+	}
+@media (max-width:360px) {
+	.card.shop {
+		background-image:none !important;
+		background-color:#222;
+	}
+}
+  
+}
