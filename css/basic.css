@@ -3,7 +3,7 @@
 	src: url("neuropolitical rg.ttf");
 }
 
-h1,header,h2,.navbar
+h1,header,h2,.navbar,h3
 	{ font-family: "Neuropolitical RG",Helvetica, sans-serif; }
 	
 #headnav .nav-link { display:inline-block; border-bottom:thick rgb(255,255,255,0) solid; }
@@ -21,7 +21,7 @@ h1,header,h2,.navbar
 	
 .text-info { font-variant: small-caps; }
 
-.card h1 { font-size: large; }
+.card h3 { font-size: large; }
 
 .card.shop {
 	background-repeat: no-repeat;
