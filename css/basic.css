@@ -31,7 +31,7 @@ h1,header,h2,.navbar,h3
 }
 
 .card.shop .card-body {
-	background-image:linear-gradient(to left,rgb(255,255,255,0),120px,rgb(255,255,255,100),200px,#fff);
+	background-image:linear-gradient(to left,rgba(255,255,255,0),120px,rgb(255,255,255),200px,#fff);
 }
 
 .card#etsy { background-image:url('../img/etsy2.png'); }
@@ -57,7 +57,7 @@ h1,header,h2,.navbar,h3
 	}
 	.card.shop:not(#myanimix) .card-body {
 		padding-top:200px; 
-		background-image:linear-gradient(rgb(0,0,0,0),150px,#fff,215px,#fff);
+		background-image:linear-gradient(rgba(0,0,0,0),150px,#fff,215px,#fff);
 	}
 }
 @media (min-width:768px) {
@@ -90,7 +90,7 @@ h1,header,h2,.navbar,h3
   .bg-white { background-color:#222!important; }
   #headnav { background-image:none; }
   .card.shop .card-body {
-	background-image:linear-gradient(to left,rgb(13,13,13,0),120px,rgb(13.3,13.3,13.3,100),200px,#222);
+	background-image:linear-gradient(to left,rgb(13,13,13,0),120px,rgb(13.3,13.3,13.3),200px,#222);
   }
   .card.shop { border-color:#000; }
   .text-dark { color:#bbb!important; }
