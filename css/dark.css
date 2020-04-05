@@ -85,7 +85,6 @@ h1,header,h2,.navbar
 		background-position: right -50px bottom -15px; }
 }
 
-@media (prefers-color-scheme: dark) {
   body { background:  #222; color:#bbb; }
   .bg-white { background-color:#222!important; }
   #headnav { background-image:none; }
@@ -113,14 +112,10 @@ h1,header,h2,.navbar
 	}
 }
   
-}
-
 /* accessability */
-#headnav .nav-link { color:#0056b3; }
+#headnav .nav-link { color:#0056b3!important; }
 .text-info { color:#0c616e!important; }
 .text-secondary { color:#c5ccce!important; }
-@media (prefers-color-scheme:dark) {
-	#headnav .nav-link { color:#007bff; }
-	.text-info { color: #17a2b8; }
+#headnav .nav-link { color:#007bff!important; }
+	.text-info { color: #17a2b8!important; }
 	.text-secondary { color:#6c757d!important; }
-}
