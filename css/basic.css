@@ -92,7 +92,7 @@ h1,header,h2,.navbar,h3
   .card.shop .card-body {
 	background-image:linear-gradient(to left,rgb(13,13,13,0),120px,rgb(13.3,13.3,13.3),200px,#222);
   }
-  .card.shop { border-color:#000; }
+  .card.shop { border-color:#333; }
   .text-dark { color:#bbb!important; }
   .bg-dark { background-color:#111!important; }
   
