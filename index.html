@@ -15,6 +15,7 @@
 	<meta property="twitter:description" content="My art journey began in 2016, when my lovely wife purchased an iPad Pro.">
 	<meta property="twitter:url" content="http://gottyjart.com">
 	<meta property="twitter:image" content="http://gottyjart.com/img/gottydbz.png">
+	<meta name="description" content="GottyJ.Art provides easy access to all fan and original artwork by GottyJ and locations to purchase your own GottyJ piece.">
     <title>GottyJ.Art</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/basic.css">
@@ -49,41 +50,49 @@
 	<article id="shop" class="container">
 	<h2>Shop</h2>
 	<div class="card-deck justify-content-around">
-		<div class="card shop mb-4" id="etsy">
+		<div class="card shop mb-4" id="etsy" itemscope itemtype="https://schema.org/Store">
 			<div class="card-body">
 				<h3 class="card-title">
-					<a href="http://www.etsy.com/shop/gottyjArt" class="stretched-link text-dark">
+					<a href="http://www.etsy.com/shop/gottyjArt" class="stretched-link text-dark" itemprop="brand name">
 					Etsy</a></h3>
+				<link href="img/etsy2.png" itemprop="image">
+				<meta itemprop="priceRange" content="$10-$40">
 				<p class="text-info font-weight-bold card-text">Prints directly from GottyJ</p>
-				<p class="card-subtitle">Free shipping on orders over $35</p>
+				<p class="card-subtitle" itemprop="description">Free shipping on orders over $35</p>
 			</div>
 		</div>
-		<div class="card shop mb-4" id="displate">
+		<div class="card shop mb-4" id="displate" itemscope itemtype="https://schema.org/Store">
 			<div class="card-body">
 				<h3 class="card-title">
-					<a href="https://displate.com/gottyj45" class="stretched-link text-dark">
+					<a href="https://displate.com/gottyj45" class="stretched-link text-dark" itemprop="brand name">
 					Displate</a></h3>
-				<p class="text-info font-weight-bold card-text">Metal posters</p>
-				<p class="card-subtitle">Durable prints designed to last</p>
+				<link href="img/displate.png" itemprop="image">
+				<meta itemprop="priceRange" content="$44+">
+				<p class="text-info font-weight-bold card-text" itemprop="description">Metal posters</p>
+				<p class="card-subtitle" itemprop="description">Durable prints designed to last</p>
 			</div>
 		</div>
-		<div class="card shop mb-4" id="teepublic">
+		<div class="card shop mb-4" id="teepublic" itemscope itemtype="https://schema.org/ClothingStore">
 			<div class="card-body">
 				<h3 class="card-title">
-					<a href="https://www.teepublic.com/user/gottyjart" class="stretched-link text-dark">
+					<a href="https://www.teepublic.com/user/gottyjart" class="stretched-link text-dark" itemprop="brand name">
 					TeePublic</a></h3>
-				<p class="text-info font-weight-bold card-text">T-shirts of GottyJ's work</p>
-				<p class="card-subtitle">Choose your own size and color</p>
+				<link href="img/teepublic.png" itemprop="image">
+				<meta itemprop="priceRange" content="$10-$30">
+				<p class="text-info font-weight-bold card-text" itemprop="description">T-shirts of GottyJ's work</p>
+				<p class="card-subtitle" itemprop="description">Choose your own size and color</p>
 			</div>
 		</div>
 		<div class="w-100 d-none d-sm-block d-md-none"></div>
-		<div class="card shop mb-4" id="myanimix">
+		<div class="card shop mb-4" id="myanimix" itemscope itemtype="https://schema.org/Store">
 			<div class="card-body">
 				<h3 class="card-title">
-					<a href="https://www.myanimix.com" class="stretched-link text-dark">
+					<a href="https://www.myanimix.com" class="stretched-link text-dark" itemprop="brand name">
 						My Animix</a></h3>
-				<p class="text-info font-weight-bold card-text">A local anime shop</p>
-				<p class="card-subtitle">Now selling online merchandise</p>
+				<link href="img/myanimix.jpg" itemprop="image">
+				<meta itemprop="priceRange" content="$10-$40">
+				<p class="text-info font-weight-bold card-text" itemprop="description">A local anime shop</p>
+				<p class="card-subtitle" itemprop="description">Now selling online merchandise</p>
 			</div>
 		</div>
 	</div>
