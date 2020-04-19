@@ -26,8 +26,8 @@
     <nav id="headnav" class="navbar sticky-top navbar-light bg-white">
 	  <div class="container"><a href="#" class="navbar-brand">
 		<picture>
-			<!--<source srcset="img/favartdark.png" width="36" height="36" media="(prefers-color-scheme: dark)">
-			--><img src="img/favart.png" width="36" height="36" alt="GJ.Art">
+			<source srcset="img/favart.webp" width="36" height="36" type="image/webp">
+			<img src="img/favart.png" width="36" height="36" alt="GJ.Art">
 		</picture></a>
 	  <div class="bd-navbar-nav nav mr-auto">
 		<a href="#shop" class="nav-item nav-link"><i class="fas fa-shopping-cart"></i> Shop</a>
@@ -43,7 +43,11 @@
 	
 	<header id="brand" class="text-center">
 		<h1>
-			<img src="img/gottydbz.jpeg" alt="GottyJ.Art" style="max-height:760px" class="img-fluid"></h1>
+			<picture>
+				<source srcset="img/gottydbz.webp" type="image/webp" class="img-fluid">
+				<img src="img/gottydbz.jpeg" alt="GottyJ.Art" style="max-height:760px" class="img-fluid">
+			</picture>
+		</h1>
 		<!--<p>The artwork of GottyJ, all in one location.</p>-->
 	</header>
 	
@@ -55,7 +59,7 @@
 				<h3 class="card-title">
 					<a href="https://gottyjart.square.site/s/shop" class="stretched-link text-dark" itemprop="brand name">
 		                        Shop</a></h3>
-				<link href="img/etsy2.png" itemprop="image">
+				<link href="img/shop/square.jpg" itemprop="image">
 				<meta itemprop="priceRange" content="$10-$40">
 				<p class="text-info font-weight-bold card-text">Prints directly from GottyJ</p>
 				<p class="card-subtitle" itemprop="description">Free shipping on orders over $35</p>
@@ -66,7 +70,7 @@
 				<h3 class="card-title">
 					<a href="https://displate.com/gottyj45" class="stretched-link text-dark" itemprop="brand name">
 					Displate</a></h3>
-				<link href="img/displate.png" itemprop="image">
+				<link href="img/shop/displate.jpg" itemprop="image">
 				<meta itemprop="priceRange" content="$44+">
 				<p class="text-info font-weight-bold card-text" itemprop="description">Metal posters</p>
 				<p class="card-subtitle" itemprop="description">Durable prints designed to last</p>
@@ -77,7 +81,7 @@
 				<h3 class="card-title">
 					<a href="https://www.teepublic.com/user/gottyjart" class="stretched-link text-dark" itemprop="brand name">
 					TeePublic</a></h3>
-				<link href="img/teepublic.png" itemprop="image">
+				<link href="img/shop/teepublic.jpg" itemprop="image">
 				<meta itemprop="priceRange" content="$10-$30">
 				<p class="text-info font-weight-bold card-text" itemprop="description">T-shirts of GottyJ's work</p>
 				<p class="card-subtitle" itemprop="description">Choose your own size and color</p>
@@ -89,7 +93,7 @@
 				<h3 class="card-title">
 					<a href="https://www.myanimix.com" class="stretched-link text-dark" itemprop="brand name">
 						My Animix</a></h3>
-				<link href="img/myanimix.jpg" itemprop="image">
+				<link href="img/shop/myanimix.jpg" itemprop="image">
 				<meta itemprop="priceRange" content="$10-$40">
 				<p class="text-info font-weight-bold card-text" itemprop="description">A local anime shop</p>
 				<p class="card-subtitle" itemprop="description">Now selling online merchandise</p>
@@ -119,8 +123,10 @@
 	</div>
 	<div class="col-lg-6 mr-0 pr-0 align-bottom mt-auto">
 		<picture>
-		<source srcset="img/aboutn.png" media="(min-width:992px)" class="img-fluid">
-		<img src="img/about.png" alt="" class="img-fluid">
+			<source srcset="img/aboutn.webp" media="(min-width:992px)" class="img-fluid" type="image/webp">
+			<source srcset="img/about.webp" class="img-fluid" type="image/webp">
+			<source srcset="img/aboutn.png" media="(min-width:992px)" class="img-fluid">
+			<img src="img/about.png" alt="" class="img-fluid">
 		</picture>
 	</div></div>
 	</article>
