@@ -127,3 +127,8 @@ h1,header,h2,.navbar,h3
 @media(min-width: 768px) {
 	#extra { display:block; }
 }
+
+.navbar-toggler[aria-expanded="true"] {
+	background-image:linear-gradient(to bottom,#ddd,#eee);
+	color:#444;
+} 
