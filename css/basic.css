@@ -10,7 +10,7 @@ h1,header,h2,.navbar,h3
 #headnav .active { display:inline-block; border-bottom:thick #007bff solid; }
 
 #headnav { 
-	background-image:url('../img/ponyo.png');
+	background-image:url('/img/ponyo.png');
 	background-size: auto 150px;
 	background-repeat: no-repeat; 
 	background-position: 65% 52%;
@@ -73,7 +73,7 @@ h1,header,h2,.navbar,h3
 @media (max-width:768px) {
 	#headnav { 
 		background-size:auto 110px;
-		background-position: right -50px bottom -15px; }
+		background-position: right -50px top -15px; }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -132,3 +132,5 @@ h1,header,h2,.navbar,h3
 	background-image:linear-gradient(to bottom,#ddd,#eee);
 	color:#444;
 } 
+.collapsing { transform:translateZ(0);
+	transition:0.3s; }
