@@ -115,3 +115,15 @@ h1,header,h2,.navbar,h3
 	.text-info { color: #17a2b8; }
 	.text-secondary { color:#6c757d!important; }
 }
+
+.fa-external-link-square-alt {
+	vertical-align:super;
+	font-size:x-small;
+}
+
+.navbar-toggler { background-color:#fff;
+ }
+ 
+@media(min-width: 768px) {
+	#extra { display:block; }
+}
