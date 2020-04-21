@@ -1,6 +1,7 @@
 @font-face {
 	font-family: "Neuropolitical RG";
 	src: url("neuropolitical rg.ttf");
+	font-display:swap; 
 }
 
 h1,header,h2,.navbar,h3
@@ -134,3 +135,18 @@ h1,header,h2,.navbar,h3
 } 
 .collapsing { transform:translateZ(0);
 	transition:0.3s; }
+	
+@media (prefers-color-scheme:dark) {
+	.navbar-toggler {
+		background-color:#333;
+		color:#ccc;
+	}
+	.navbar-toggler[aria-expanded="true"] {
+		background-image:linear-gradient(to bottom,#444,#333);
+		color:#ccc;
+	}
+	.collapsing {
+		transform: translateZ(0);
+		transition:0.3s;
+	}
+}
