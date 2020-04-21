@@ -12,7 +12,7 @@
 	}
 	.navbar-toggler[aria-expanded="true"] {
 		background-image:linear-gradient(to bottom,#444,#333);
-		color:#999 !important;
+		color:#aaa !important;
 	}
 	.collapsing {
 		transform: translateZ(0);
