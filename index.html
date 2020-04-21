@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+	<!-- bootstrap -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<!-- OpenGraph and Twitter cards -->
 	<meta property="og:title" content="GottyJ.Art">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="http://gottyjart.com">
@@ -15,39 +19,53 @@
 	<meta property="twitter:description" content="My art journey began in 2016, when my lovely wife purchased an iPad Pro.">
 	<meta property="twitter:url" content="http://gottyjart.com">
 	<meta property="twitter:image" content="http://gottyjart.com/img/gottydbz.png">
+
+	<!-- SEO -->
 	<meta name="description" content="GottyJ.Art provides easy access to all fan and original artwork by GottyJ and locations to purchase your own GottyJ piece.">
+
+	<!-- Basic -->
     <title>GottyJ.Art</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/basic.css">
+	<link rel="stylesheet" href="css/defer.css">
+	<link rel="stylesheet" href="css/576.css" media="(min-width:576px)">
+	<link rel="stylesheet" href="css/768.css" media="(min-width:768px)">
+	<link rel="stylesheet" href="css/dark.css" media="(prefers-color-scheme:dark)">
 	<link rel="icon" type="image/png" href="img/favsm.png">
+	
+	<!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/8218aaee33.js" crossorigin="anonymous"></script>
   </head>
   <body data-spy="scroll" data-target="#headnav" data-offset="62">
+
+	<!-- sticky navigation -->
     <nav id="headnav" class="navbar sticky-top navbar-expand-md navbar-light bg-white">
-	  <div class="container"><a href="#" class="navbar-brand">
-		<picture>
-			<source srcset="img/favart.webp" width="36" height="36" type="image/webp">
-			<img src="img/favart.png" width="36" height="36" alt="GJ.Art">
-		</picture></a>
-	  <div class="bd-navbar-nav nav mr-auto">
-		<a href="#shop" class="nav-item nav-link"><i class="fas fa-shopping-cart"></i> Shop</a>
-		<a href="#about" class="nav-item nav-link"><i class="fas fa-user"></i> About</a>
-	    <a href="https://gottyjart.square.site/gallery" class="nav-item nav-link d-none d-md-inline"><i class="fas fa-images"></i> Gallery <i class="fas fa-external-link-square-alt"></i></a>
-   	</div>
+		<div class="container">
+			<a href="#" class="navbar-brand"><picture>
+				<source srcset="img/favart.webp" width="36" height="36" type="image/webp">
+				<img src="img/favart.png" width="36" height="36" alt="GJ.Art">
+			</picture></a>
+			<div class="bd-navbar-nav nav mr-auto">
+				<a href="#shop" class="nav-item nav-link"><i class="fas fa-shopping-cart"></i> Shop</a>
+				<a href="#about" class="nav-item nav-link"><i class="fas fa-user"></i> About</a>
+				<a href="https://gottyjart.square.site/gallery" class="nav-item nav-link d-none d-md-inline"><i class="fas fa-images"></i> Gallery <i class="fas fa-external-link-square-alt"></i></a>
+			</div>
 	
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" role="button" data-target="#extras" aria-controls="extras" aria-expanded="false" aria-label="Toggle more navigation">
-		<i class="fas fa-bars"></i>
-	  </button>
+			<!-- hamburger -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" role="button" data-target="#extras" aria-controls="extras" aria-expanded="false" aria-label="Toggle more navigation">
+				<i class="fas fa-bars"></i>
+			</button>
 	
-	<div class="collapse ml-auto" id="extras">
-	  <div class="bd-navbar-nav nav ml-auto" role="navigation">
-	    <a href="https://gottyjart.square.site/gallery" class="nav-item nav-link d-md-none"><i class="fas fa-images"></i> Gallery <i class="fas fa-external-link-square-alt"></i></a>
-		<a class="nav-item nav-link" href="https://www.facebook.com/GottyJArt-1572905736106586/"><i class="fab fa-facebook-square"></i><span class="d-none"> Facebook</span></a>
-		<a class="nav-link nav-item" href="https://www.instagram.com/gottyj.art/"><i class="fab fa-instagram"></i><span class="d-none"> Instagram</span></a>
-		<a class="nav-link nav-item" href="https://www.youtube.com/channel/UCOQx7_JjPdjXEr7fyO6kx8w"><i class="fab fa-youtube"></i><span class="d-none"> YouTube</span></a>
-		<a class="nav-link nav-item" href="https://www.deviantart.com/gottyj"><i class="fab fa-deviantart"></i><span class="d-none"> DeviantArt</span></a>
-	  </div></div>
-	 </div>
+			<!-- extra div prevents lag on collapse -->
+			<div class="collapse ml-auto" id="extras">
+				<div class="bd-navbar-nav nav ml-auto" role="navigation">
+					<a href="https://gottyjart.square.site/gallery" class="nav-item nav-link d-md-none"><i class="fas fa-images"></i> Gallery <i class="fas fa-external-link-square-alt"></i></a>
+					<a class="nav-item nav-link" href="https://www.facebook.com/GottyJArt-1572905736106586/"><i class="fab fa-facebook-square"></i><span class="d-none"> Facebook</span></a>
+					<a class="nav-link nav-item" href="https://www.instagram.com/gottyj.art/"><i class="fab fa-instagram"></i><span class="d-none"> Instagram</span></a>
+					<a class="nav-link nav-item" href="https://www.youtube.com/channel/UCOQx7_JjPdjXEr7fyO6kx8w"><i class="fab fa-youtube"></i><span class="d-none"> YouTube</span></a>
+					<a class="nav-link nav-item" href="https://www.deviantart.com/gottyj"><i class="fab fa-deviantart"></i><span class="d-none"> DeviantArt</span></a>
+				</div>
+			</div>
+		</div>
 	</nav>
 	
 	<header id="brand" class="text-center">
@@ -60,7 +78,7 @@
 		<!--<p>The artwork of GottyJ, all in one location.</p>-->
 	</header>
 	
-	<article id="shop" class="container">
+<article id="shop" class="container">
 	<h2>Shop</h2>
 	<div class="card-deck justify-content-around">
 		<div class="card shop mb-4" id="etsy" itemscope itemtype="https://schema.org/Store">
@@ -109,26 +127,19 @@
 			</div>
 		</div>
 	</div>
+</article>
 	
-	<!--<ul>
-		<li><a href="http://www.etsy.com/shop/gottyjArt">Etsy</a></li>
-		<li><a href="https://displate.com/gottyj45">Displate</a></li>
-		<li><a href="https://www.teepublic.com/user/gottyjart">TeePublic</a></li>
-		<li><a href="https://www.myanimix.com">My Animix</a></li>
-	</ul>-->
-	</article>
-	
-	<article id="about" class="container">
+<article id="about" class="container">
 	<div class="row">
 	<div class="col-lg-6 mr-0 pr-0">
-	<h2>About</h2>
-	<p> Self taught Artist from Wisconsin, my art journey began in 2016, when my lovely wife purchased an iPad Pro for my birthday. I’ve always loved anime and manga and have always wanted to learn how to draw all the amazing characters I saw. However I never thought I had the ability until I got that tablet and set out to learn. </p>
+		<h2>About</h2>
+		<p>I'm a self-taught Artist from Wisconsin, and my art journey began in 2016, when my lovely wife purchased an iPad Pro for my birthday. I’ve always loved anime and manga and have always wanted to learn how to draw all the amazing characters I saw. However I never thought I had the ability until I got that tablet and set out to learn. </p>
 
-<p> Since then, through hard work and daily practice (and fun!) I not only sell my art online, as you will see on this lovely website, but I also sell my fan art at a local anime store in Kenosha, WI as well as hosted my own Artist Alley Booth at the 2017 Anime Milwaukee Convention. </p>
+		<p>Since then, through hard work and daily practice (and fun!), I not only sell my art online, as you will see on this lovely website, but I also sell my fan art at a local anime store in Kenosha, WI as well as hosted my own Artist Alley Booth at the 2017 Anime Milwaukee Convention.</p>
 
-<p> I do most — if not all my art, on my trusty iPad. And mainly do 8.5x11 and 11x17 poster prints of my work to sell online. Additionally I partner with Displate so that people can get metal prints of my work and I also occasionally print my work on canvas by request! </p>
+		<p>I do most -- if not all my art -- on my trusty iPad. I mainly create 8.5x11 and 11x17 poster prints of my work to sell online.  Additionally I partner with Displate so that people can get metal prints of my work and I also occasionally print my work on canvas by request!</p>
 
-<p> Commissions are always welcome! </p>
+		<p>Commissions are always welcome!</p>
 	</div>
 	<div class="col-lg-6 mr-0 pr-0 align-bottom mt-auto text-right">
 		<picture>
@@ -138,9 +149,9 @@
 			<img src="img/about.png" alt="" class="img-fluid">
 		</picture>
 	</div></div>
-	</article>
+</article>
 	
-	<footer class="bg-dark text-light">
+<footer class="bg-dark text-light">
 	<h2 class="d-none">Navigation</h2>
 	
 	<div class="nav container pt-4">
@@ -161,20 +172,13 @@
 	<address class="mb-0 container pb-4">If you like a specific piece feel free to message me via <a href="mailto:gottyj@gmail.com" class="text-light"><i class="fas fa-envelope"></i> gottyj@gmail.com <i class="fas fa-external-link-square-alt"></i></a> to ask about sizing and prices.</address>
 	
 	
-	</footer>
+</footer>
 	
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-	<script>
-$(window).bind('resize load', function() {
-    if ($(this).width() > 767) {
-        $('.collapse').addClass('show');
-    } else {
-        $('.collapse').removeClass('show');
-    }
-});
-	</script>
+	<!-- hamburger display for certain screen sizes -->
+	<script src="js/hamburger.js"></script>
   </body>
 </html>

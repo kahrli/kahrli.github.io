@@ -1,0 +1,13 @@
+@media (min-width:768px) {
+	.card.shop#myanimix {
+		max-width:300px;
+		min-width:130px;
+		background-size:300px;
+		background-position:top -30px center;
+	}
+	.card.shop#myanimix .card-body {
+		padding-top:200px; 
+		background-image:linear-gradient(rgb(0,0,0,0),150px,#fff,215px,#fff);
+	}
+	#extra { display:block; }
+}

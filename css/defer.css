@@ -1,0 +1,21 @@
+#headnav .active { display:inline-block; border-bottom:thick #007bff solid; }
+
+/* to align sticky navigation with headers properly */
+:target::before { 
+	display:block; 
+	content:""; 
+	padding-top:62px; 
+	margin-top:-62px; 
+}
+
+/* add a pushed in effect to the hamburger */
+.navbar-toggler[aria-expanded="true"] {
+	background-image:linear-gradient(to bottom,#ddd,#eee);
+	color:#444;
+} 
+
+/* make the collapse effect feel less laggy */
+.collapsing { 
+	transform:translateZ(0);
+	transition:0.3s;
+}

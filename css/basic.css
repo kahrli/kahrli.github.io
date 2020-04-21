@@ -1,3 +1,4 @@
+/* headers */
 @font-face {
 	font-family: "Neuropolitical RG";
 	src: url("neuropolitical rg.ttf");
@@ -7,19 +8,27 @@
 h1,header,h2,.navbar,h3
 	{ font-family: "Neuropolitical RG",Helvetica, sans-serif; }
 	
-#headnav .nav-link { display:inline-block; border-bottom:thick rgb(255,255,255,0) solid; }
-#headnav .active { display:inline-block; border-bottom:thick #007bff solid; }
-
+/* initial navigation */
 #headnav { 
-	background-image:url('/img/ponyo.png');
+	background: url('/img/ponyo.png') no-repeat 65% 52%;
 	background-size: auto 150px;
-	background-repeat: no-repeat; 
-	background-position: 65% 52%;
 }
 
-:target::before { 
-	display:block; content:""; padding-top:62px; margin-top:-62px; }
+#headnav .nav-link { 
+	display:inline-block; 
+	border-bottom:thick rgb(255,255,255,0) solid; 
+	color:#0056b3;
+}
+
+.fa-external-link-square-alt {
+	vertical-align:super;
+	font-size:x-small;
+}
+
+/* hamburger */
+.navbar-toggler { background-color:#fff; }
 	
+/* cards */
 .text-info { font-variant: small-caps; }
 
 .card h3 { font-size: large; }
@@ -40,113 +49,16 @@ h1,header,h2,.navbar,h3
 .card#teepublic { background-image:url('/img/shop/teepublic.jpg'); }
 .card#myanimix { background-image:url('/img/shop/myanimix.jpg'); }
 
-@media (min-width:576px) {
-	.card.shop:not(#myanimix) {
-		max-width:300px;
-		min-width:130px;
-		background-size:300px;
-		background-position:top -30px center;
-	}
-	.card.shop:not(#myanimix) .card-body {
-		padding-top:200px; 
-		background-image:linear-gradient(rgba(0,0,0,0),150px,#fff,215px,#fff);
-	}
-}
-@media (min-width:768px) {
-	.card.shop#myanimix {
-		max-width:300px;
-		min-width:130px;
-		background-size:300px;
-		background-position:top -30px center;
-	}
-	.card.shop#myanimix .card-body {
-		padding-top:200px; 
-		background-image:linear-gradient(rgb(0,0,0,0),150px,#fff,215px,#fff);
-	}	
-}
-
 @media (max-width:360px) {
-	.card.shop {
-		background-image:none !important;
-	}
+	.card.shop { background-image:none !important; }
 }
 
 @media (max-width:768px) {
 	#headnav { 
 		background-size:auto 110px;
-		background-position: right -50px top -15px; }
-}
-
-@media (prefers-color-scheme: dark) {
-  body { background:  #222; color:#bbb; }
-  .bg-white { background-color:#222!important; }
-  #headnav { background-image:none; }
-  .card.shop .card-body {
-	background-image:linear-gradient(to left,rgb(13,13,13,0),120px,rgb(13.3,13.3,13.3),200px,#222);
-  }
-  .card.shop { border-color:#333; }
-  .text-dark { color:#bbb!important; }
-  .bg-dark { background-color:#111!important; }
-  
-	@media (min-width:576px) {
-		.card.shop:not(#myanimix) .card-body {
-			background-image:linear-gradient(rgb(0,0,0,0),150px,#222,215px,#222);
-		}
+		background-position: right -50px top -15px;
 	}
-	@media (min-width:768px) {
-		.card.shop#myanimix .card-body {
-			background-image:linear-gradient(rgb(0,0,0,0),150px,#222,215px,#222);
-		}	
-	}
-@media (max-width:360px) {
-	.card.shop {
-		background-image:none !important;
-		background-color:#222;
-	}
-}
-  
 }
 
 /* accessability */
-#headnav .nav-link { color:#0056b3; }
 .text-info { color:#0c616e!important; }
-.text-secondary { color:#c5ccce!important; }
-@media (prefers-color-scheme:dark) {
-	#headnav .nav-link { color:#007bff; }
-	.text-info { color: #17a2b8; }
-	.text-secondary { color:#6c757d!important; }
-}
-
-.fa-external-link-square-alt {
-	vertical-align:super;
-	font-size:x-small;
-}
-
-.navbar-toggler { background-color:#fff;
- }
- 
-@media(min-width: 768px) {
-	#extra { display:block; }
-}
-
-.navbar-toggler[aria-expanded="true"] {
-	background-image:linear-gradient(to bottom,#ddd,#eee);
-	color:#444;
-} 
-.collapsing { transform:translateZ(0);
-	transition:0.3s; }
-	
-@media (prefers-color-scheme:dark) {
-	.navbar-toggler {
-		background-color:#333;
-		color:#ccc;
-	}
-	.navbar-toggler[aria-expanded="true"] {
-		background-image:linear-gradient(to bottom,#444,#333);
-		color:#ccc;
-	}
-	.collapsing {
-		transform: translateZ(0);
-		transition:0.3s;
-	}
-}
