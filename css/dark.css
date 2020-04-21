@@ -22,7 +22,10 @@
 	/* cards */
 	.card.shop .card-body 
 	{
-		background-image:linear-gradient(to left,rgb(13,13,13,0),120px,rgb(13.3,13.3,13.3),200px,#222);
+		background-image:linear-gradient(to left,rgb(13,13,13,0),120px,#222,200px,#222);
+	}
+	.shop .card-footer {
+		background-image:linear-gradient(to left,rgba(17,17,17,0.3),120px,#2a2a2a,200px,#2a2a2a);	
 	}
 	.card.shop { border-color:#333; }
 	

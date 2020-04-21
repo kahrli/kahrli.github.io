@@ -43,8 +43,11 @@ h1,header,h2,.navbar,h3
 .card.shop .card-body {
 	background-image:linear-gradient(to left,rgba(255,255,255,0),120px,rgb(255,255,255),200px,#fff);
 }
+.shop .card-footer {
+	background-image:linear-gradient(to left,rgba(238,238,238,0.3),120px,#efefef,200px,#efefef);	
+}
 
-.card#etsy { background-image:url('/img/shop/square.jpg'); }
+.card#square { background-image:url('/img/shop/square.jpg'); }
 .card#displate { background-image:url('/img/shop/displate.jpg'); }
 .card#teepublic { background-image:url('/img/shop/teepublic.jpg'); }
 .card#myanimix { background-image:url('/img/shop/myanimix.jpg'); }
@@ -59,6 +62,7 @@ h1,header,h2,.navbar,h3
 		background-position: right -50px top -15px;
 	}
 }
+
 
 /* accessability */
 .text-info { color:#0c616e!important; }
